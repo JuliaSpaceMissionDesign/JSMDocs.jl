@@ -1,0 +1,4 @@
+name = "JSMDocs"
+uuid = "abe1bdd9-1b97-4520-92e2-03ca714a840f"
+authors = ["Andrea Pasquale <andrea.pasquale@polimi.it> and Michele Ceresoli <michele.ceresoli@polimi.it>"]
+version = "1.0.0"
