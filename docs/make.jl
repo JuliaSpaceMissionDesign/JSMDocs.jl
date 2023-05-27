@@ -5,7 +5,7 @@ const CI = get(ENV, "CI", "false") == "true"
 
 makedocs(;
     authors="Andrea Pasquale <andrea.pasquale@polimi.it> and Michele Ceresoli <michele.ceresoli@polimi.it>",
-    sitename="Julia Space Mission Design",
+    sitename="JSMD",
     modules=[JSMDocs],
     format=Documenter.HTML(; 
         prettyurls=CI, 
@@ -23,7 +23,7 @@ makedocs(;
             "Models" => [
                 "Time" => "encyclopedia/astro/time.md",
                 "Frames" => "encyclopedia/astro/frames/index.md",
-                "Gravity" => "encyclopedia/astro/gravity.md"
+                "Gravity" => "encyclopedia/astro/gravity/index.md"
             ]
         ]
     ],

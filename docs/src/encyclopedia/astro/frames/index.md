@@ -14,5 +14,5 @@ clear and mathematically accurate representation of the most used reference fram
 
 ```@contents
 Pages = ["iers.md"]
-Depth = 2
+Depth = 1
 ```
