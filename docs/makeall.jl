@@ -69,6 +69,7 @@ if "deploy" in ARGS
     outbranch = "gh-pages"
     run(`git checkout $outbranch`)
     run(`rm -rf Home`)
+    
     for file in readdir(outpath)
         cp(joinpath(outpath, file), joinpath("dev", gitroot, file), force=true)
     end
