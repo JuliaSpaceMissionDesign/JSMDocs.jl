@@ -29,6 +29,8 @@ jobs:
           git config user.email github-actions@github.com
           julia --project=docs --color=yes docs/makeall.jl 
           ls -la
+          cd docs 
+          ls -la
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DOCUMENTER_KEY: ${{ secrets.DOCUMENTER_KEY }}
