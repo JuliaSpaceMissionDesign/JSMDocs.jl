@@ -14,7 +14,7 @@ makedocs(;
         ansicolor=true
     ),
     pages=[
-        "Home" => "index.md",
+        "index.md",
         "Ecosystem" => [
             "Roadmap" => "ecosystem/roadmap.md"
         ],

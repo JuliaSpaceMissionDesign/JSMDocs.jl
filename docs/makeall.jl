@@ -87,7 +87,7 @@ if "deploy" in ARGS
     run(`git pull`)
     outbranch = "gh-pages"
     run(`git checkout $outbranch`)
-    run(`rm -rf Home`)
+    run(`rm -rf Home index.html index.json`)
 
     for file in readdir(outpath)
         cp(joinpath(outpath, file), joinpath(gitroot, file), force=true)
