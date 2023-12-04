@@ -1,6 +1,8 @@
 using Documenter, LibGit2, Pkg
 using MultiDocumenter
 
+include("make.jl")
+
 clonedir = ("--temp" in ARGS) ? mktempdir() : joinpath(@__DIR__, "clones")
 outpath = mktempdir()
 @info """
@@ -20,8 +22,10 @@ external_urls = Dict()
 docs = Any[
     MultiDocumenter.MultiDocRef(
         upstream = joinpath(@__DIR__,"build"), # if docs build this is the default 
-        path = "home", # where to put that in the final out folder
+        path = "juliamanifolds", # where to put that in the final out folder
         name = "Home", # menu entry
+        giturl = "", # something?
+        branch = "", # maybe necessary not sure?
         fix_canonical_url = false, # this seems to fix the error from above, but since it is not documented I do not know what it does.
     )
 ]

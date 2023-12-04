@@ -30,6 +30,6 @@ makedocs(;
     clean=true,
 )
 
-deploydocs(;
-    repo="github.com/JuliaSpaceMissionDesign/JSMDocs.jl", branch="gh-pages"
-)
+# deploydocs(;
+#     repo="github.com/JuliaSpaceMissionDesign/JSMDocs.jl", branch="gh-pages"
+# )
