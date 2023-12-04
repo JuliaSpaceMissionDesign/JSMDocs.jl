@@ -26,10 +26,10 @@ docs = Any[
 # Ordering Matters!
 docsmodules = [
     "Core" => [
+        "Tempo",
         "Ephemerides", 
-        "Tempo", 
+        "CalcephEphemeris",
         "FrameTransformations",
-        "CalcephEphemeris"
     ]
     "Developer Tools" => 
     [
