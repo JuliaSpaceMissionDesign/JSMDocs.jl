@@ -12,24 +12,16 @@ Building aggregate site into: $(outpath)
 
 external_urls = Dict()
 
-# docs = Any[
-#     MultiDocumenter.MultiDocRef(
-#         upstream = joinpath(clonedir, "Home"),
-#         path = "home",
-#         name = "Home",
-#         giturl = "https://github.com/JuliaSpaceMissionDesign/JSMDocs.jl.git")]
-
 docs = Any[
     MultiDocumenter.MultiDocRef(
-        upstream = joinpath(@__DIR__,"build"), # if docs build this is the default 
-        path = "juliamanifolds", # where to put that in the final out folder
-        name = "Home", # menu entry
-        giturl = "", # something?
-        branch = "", # maybe necessary not sure?
-        fix_canonical_url = false, # this seems to fix the error from above, but since it is not documented I do not know what it does.
+        upstream = joinpath(@__DIR__,"build"),  
+        path = "home",
+        name = "Home", 
+        giturl = "", 
+        branch = "", 
+        fix_canonical_url = false, 
     )
 ]
-# docs = Any[]
 
 # Ordering Matters!
 docsmodules = [

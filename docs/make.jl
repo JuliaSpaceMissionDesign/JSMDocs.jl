@@ -5,7 +5,7 @@ const CI = get(ENV, "CI", "false") == "true"
 
 makedocs(;
     authors="Andrea Pasquale <andrea.pasquale@polimi.it> and Michele Ceresoli <michele.ceresoli@polimi.it>",
-    sitename="JSMD",
+    sitename="JSMD Docs",
     modules=[JSMDocs],
     format=Documenter.HTML(; 
         prettyurls=CI, 
