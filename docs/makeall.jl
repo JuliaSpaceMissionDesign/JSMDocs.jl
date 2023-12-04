@@ -60,6 +60,15 @@ MultiDocumenter.make(outpath, docs;
     rootpath = "/",
     canonical_domain = "https://juliaspacemissiondesign.github.io",
     sitemap = true,
+    custom_scripts = [
+        "https://www.googletagmanager.com/gtag/js?id=G-K7LNGMSXLE",
+        Docs.HTML("""
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K7LNGMSXLE');
+        """),
+    ],
 )
 
 
