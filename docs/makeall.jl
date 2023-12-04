@@ -51,15 +51,16 @@ MultiDocumenter.make(outpath, docs;
                      search_engine = MultiDocumenter.SearchConfig(
                         index_versions = ["stable",],
                         engine = MultiDocumenter.FlexSearch),
-                    custom_scripts = [
-                        "https://www.googletagmanager.com/gtag/js?id=G-K7LNGMSXLE",
-                        Docs.HTML("""
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                        gtag('config', 'G-K7LNGMSXLE');
-                        """),
-                    ],)
+                    # custom_scripts = [
+                    #     "https://www.googletagmanager.com/gtag/js?id=G-K7LNGMSXLE",
+                    #     Docs.HTML("""
+                    #     window.dataLayer = window.dataLayer || [];
+                    #     function gtag(){dataLayer.push(arguments);}
+                    #     gtag('js', new Date());
+                    #     gtag('config', 'G-K7LNGMSXLE');
+                    #     """),
+                    # ],
+                    )
 
 
 if "deploy" in ARGS
@@ -69,9 +70,9 @@ if "deploy" in ARGS
     outbranch = "gh-pages"
     run(`git checkout $outbranch`)
     run(`rm -rf Home`)
-    
+
     for file in readdir(outpath)
-        cp(joinpath(outpath, file), joinpath("dev", gitroot, file), force=true)
+        cp(joinpath(outpath, file), joinpath(gitroot, file), force=true)
     end
     run(`rm -rf docs`)
     run(`git add .`)
