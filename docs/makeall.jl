@@ -65,7 +65,7 @@ if "deploy" in ARGS
     #     rm(file; force = true, recursive = true)
     # end
     for file in readdir(outpath)
-        cp(joinpath(outpath, file), joinpath(gitroot, file))
+        cp(joinpath(outpath, file), joinpath(gitroot, file), force=true)
     end
     run(`git add .`)
     if success(`git commit -m 'Aggregate documentation'`)
