@@ -10,12 +10,14 @@ Building aggregate site into: $(outpath)
 
 external_urls = Dict()
 
-docs = Any[
-    MultiDocumenter.MultiDocRef(
-        upstream = joinpath(clonedir, "Home"),
-        path = "Home",
-        name = "Home",
-        giturl = "https://github.com/JuliaSpaceMissionDesign/JSMDocs.jl.git")]
+# docs = Any[
+#     MultiDocumenter.MultiDocRef(
+#         upstream = joinpath(clonedir, "Home"),
+#         path = "home",
+#         name = "Home",
+#         giturl = "https://github.com/JuliaSpaceMissionDesign/JSMDocs.jl.git")]
+
+docs = Any[]
 
 # Ordering Matters!
 docsmodules = [
@@ -25,6 +27,7 @@ docsmodules = [
 ]
 
 for group in docsmodules
+    @info "Creating documentation group $(group[1])"
     docgroups = []
     for pack in group[2]
         url = "https://github.com/JuliaSpaceMissionDesign/$pack.jl.git"
@@ -45,22 +48,15 @@ end
 outpath = joinpath(@__DIR__, "build")
 
 MultiDocumenter.make(outpath, docs;
-                     assets_dir = "docs/src/assets",
-                     sitemap = true,
-                     canonical_domain="https://juliaspacemissiondesign.github.io",
-                     search_engine = MultiDocumenter.SearchConfig(
-                        index_versions = ["stable",],
-                        engine = MultiDocumenter.FlexSearch),
-                    # custom_scripts = [
-                    #     "https://www.googletagmanager.com/gtag/js?id=G-K7LNGMSXLE",
-                    #     Docs.HTML("""
-                    #     window.dataLayer = window.dataLayer || [];
-                    #     function gtag(){dataLayer.push(arguments);}
-                    #     gtag('js', new Date());
-                    #     gtag('config', 'G-K7LNGMSXLE');
-                    #     """),
-                    # ],
-                    )
+    assets_dir = "docs/src/assets",
+    search_engine = MultiDocumenter.SearchConfig(
+        index_versions = ["stable"],
+        engine = MultiDocumenter.FlexSearch
+    ),
+    rootpath = "/",
+    canonical_domain = "https://juliaspacemissiondesign.github.io",
+    sitemap = true,
+)
 
 
 if "deploy" in ARGS

@@ -1,4 +1,4 @@
-name: deploy
+name: Aggregate
 on:
   push:
     branches:
@@ -28,10 +28,6 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           julia --project=docs --color=yes docs/makeall.jl deploy
-          rm -r docs
-          rm -r src 
-          rm README.md
-          ls -la
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DOCUMENTER_KEY: ${{ secrets.DOCUMENTER_KEY }}
