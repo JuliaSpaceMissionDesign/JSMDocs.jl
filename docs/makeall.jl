@@ -15,7 +15,7 @@ external_urls = Dict()
 docs = Any[
     MultiDocumenter.MultiDocRef(
         upstream = joinpath(@__DIR__,"build"),  
-        path = "home",
+        path = "Home",
         name = "Home", 
         giturl = "", 
         branch = "", 
