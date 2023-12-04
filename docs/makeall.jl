@@ -26,7 +26,16 @@ docs = Any[
 # Ordering Matters!
 docsmodules = [
     "Core" => [
-        "Ephemerides", "Tempo", "FrameTransformations"
+        "Ephemerides", 
+        "Tempo", 
+        "FrameTransformations",
+        "CalcephEphemeris"
+    ]
+    "Developer Tools" => 
+    [
+        "JSMDInterfaces", 
+        "JSMDUtils",
+        "SMDGraphs"
     ]
 ]
 
