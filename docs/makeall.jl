@@ -59,6 +59,7 @@ if "deploy" in ARGS
     run(`git pull`)
     outbranch = "gh-pages"
     has_outbranch = true
+    run(`git checkout gh-pages`)
     # for file in readdir(gitroot; join = true)
     #     endswith(file, ".git") && continue
     #     rm(file; force = true, recursive = true)
