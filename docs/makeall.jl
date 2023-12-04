@@ -8,21 +8,21 @@ Cloning packages into: $(clonedir)
 Building aggregate site into: $(outpath)
 """
 
+external_urls = Dict()
+
+docs = Any[
+    MultiDocumenter.MultiDocRef(
+        upstream = joinpath(clonedir, "Home"),
+        path = "JSMDocs",
+        name = "Home",
+        giturl = "https://github.com/JuliaSpaceMissionDesign/JSMDocs.jl.git")]
+
 # Ordering Matters!
 docsmodules = [
     "Core" => [
         "Ephemerides", "Tempo", "FrameTransformations"
     ]
 ]
-
-external_urls = Dict()
-
-docs = Any[
-    MultiDocumenter.MultiDocRef(
-        upstream = joinpath(clonedir, "Home"),
-        path = "Overview",
-        name = "Home",
-        giturl = "https://github.com/JuliaSpaceMissionDesign/JSMDocs.jl.git")]
 
 for group in docsmodules
     docgroups = []
@@ -50,7 +50,16 @@ MultiDocumenter.make(outpath, docs;
                      canonical_domain="https://juliaspacemissiondesign.github.io",
                      search_engine = MultiDocumenter.SearchConfig(
                         index_versions = ["stable",],
-                        engine = MultiDocumenter.FlexSearch))
+                        engine = MultiDocumenter.FlexSearch),
+                    custom_scripts = [
+                        "https://www.googletagmanager.com/gtag/js?id=G-K7LNGMSXLE",
+                        Docs.HTML("""
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', 'G-K7LNGMSXLE');
+                        """),
+                    ],)
 
 
 if "deploy" in ARGS
