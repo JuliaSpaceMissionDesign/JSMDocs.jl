@@ -1,8 +1,6 @@
-# Astronaut Roadmap
+# JSMD Roadmap
 
 ## Goals
-
-### Performance is considered a priority
 
 ### Our packages are robustly tested against state-of-art softwares
 

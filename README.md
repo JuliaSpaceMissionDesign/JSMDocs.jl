@@ -1,6 +1,5 @@
 # JSMDocs.jl
 
-[![Dev Documentation](https://img.shields.io/badge/docs-dev-blue.svg)](https://juliaspacemissiondesign.github.io/JSMDocs.jl/dev/) 
-[![Build Status](https://github.com/JuliaSpaceMissionDesign/JSMDocs.jl/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/JuliaSpaceMissionDesign/JSMDocs.jl/actions/workflows/ci.yml)
+[![Stable Documentation](https://img.shields.io/badge/docs-stable-blue.svg)](https://juliaspacemissiondesign.github.io/JSMDocs.jl/Home) 
 
 _A documentation container for the JSMD ecosystem._

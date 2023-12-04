@@ -18,14 +18,14 @@ makedocs(;
         "Ecosystem" => [
             "Roadmap" => "ecosystem/roadmap.md"
         ],
-        "Guidelines" => nothing,
-        "Encyclopedia" => [
-            "Models" => [
-                "Time" => "encyclopedia/astro/time.md",
-                "Frames" => "encyclopedia/astro/frames/index.md",
-                "Gravity" => "encyclopedia/astro/gravity/index.md"
-            ]
-        ]
+        # "Guidelines" => nothing,
+        # "Encyclopedia" => [
+        #     "Models" => [
+        #         "Time" => "encyclopedia/astro/time.md",
+        #         "Frames" => "encyclopedia/astro/frames/index.md",
+        #         "Gravity" => "encyclopedia/astro/gravity/index.md"
+        #     ]
+        # ]
     ],
     clean=true,
 )
