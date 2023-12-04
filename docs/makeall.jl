@@ -58,15 +58,11 @@ if "deploy" in ARGS
     gitroot = normpath(joinpath(@__DIR__, ".."))
     run(`git pull`)
     outbranch = "gh-pages"
-    has_outbranch = true
-    run(`git checkout gh-pages`)
-    # for file in readdir(gitroot; join = true)
-    #     endswith(file, ".git") && continue
-    #     rm(file; force = true, recursive = true)
-    # end
+    run(`git checkout $outbranch`)
     for file in readdir(outpath)
-        cp(joinpath(outpath, file), joinpath(gitroot, file), force=true)
+        cp(joinpath(outpath, file), joinpath("dev", gitroot, file), force=true)
     end
+    run(`rm -rf docs`)
     run(`git add .`)
     if success(`git commit -m 'Aggregate documentation'`)
         @info "Pushing updated documentation."
