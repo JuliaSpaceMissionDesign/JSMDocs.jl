@@ -17,7 +17,15 @@ external_urls = Dict()
 #         name = "Home",
 #         giturl = "https://github.com/JuliaSpaceMissionDesign/JSMDocs.jl.git")]
 
-docs = Any[]
+docs = Any[
+    MultiDocumenter.MultiDocRef(
+        upstream = joinpath(@__DIR__,"build"), # if docs build this is the default 
+        path = "home", # where to put that in the final out folder
+        name = "Home", # menu entry
+        fix_canonical_url = false, # this seems to fix the error from above, but since it is not documented I do not know what it does.
+    )
+]
+# docs = Any[]
 
 # Ordering Matters!
 docsmodules = [
