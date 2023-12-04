@@ -1,9 +1,0 @@
-*.jl.*.cov
-*.jl.cov
-*.jl.mem
-
-.vscode
-temp*
-generated_ 
-res/
-Manifest.toml
