@@ -13,7 +13,7 @@ external_urls = Dict()
 docs = Any[
     MultiDocumenter.MultiDocRef(
         upstream = joinpath(clonedir, "Home"),
-        path = "JSMDocs",
+        path = "Home",
         name = "Home",
         giturl = "https://github.com/JuliaSpaceMissionDesign/JSMDocs.jl.git")]
 
@@ -68,6 +68,7 @@ if "deploy" in ARGS
     run(`git pull`)
     outbranch = "gh-pages"
     run(`git checkout $outbranch`)
+    run(`rm -rf Home`)
     for file in readdir(outpath)
         cp(joinpath(outpath, file), joinpath("dev", gitroot, file), force=true)
     end
