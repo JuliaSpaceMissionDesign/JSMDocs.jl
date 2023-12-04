@@ -24,6 +24,7 @@ jobs:
       - name: Install dependencies
         run: | 
           julia --project=docs --color=yes -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd())); Pkg.instantiate()'
+          julia --project=docs --color=yes -e 'using Pkg; Pkg.add("Documenter"); Pkg.add("MultiDocumenter"); Pkg.add("LibGit2")'
       - name: Aggregate and deploy
         run: |
           git config user.name github-actions
