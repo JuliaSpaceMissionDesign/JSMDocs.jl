@@ -16,7 +16,7 @@ makedocs(;
     pages=[
         "index.md",
         "Ecosystem" => [
-            "Roadmap" => "ecosystem/roadmap.md"
+            "Mission" => "ecosystem/mission.md"
         ],
         # "Guidelines" => nothing,
         # "Encyclopedia" => [
