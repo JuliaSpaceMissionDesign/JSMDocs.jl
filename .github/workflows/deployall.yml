@@ -1,11 +1,10 @@
 name: Aggregate
 
 on:
-  - push:
-    branches:
-      - master
-  - schedule:
-    # Run every Friday at 12:00 PM (noon) UTC
+  push:
+    branches: [ master ] 
+  schedule:
+    # Run every Friday at noon UTC
     - cron: '0 12 * * 5'
 
 jobs:
