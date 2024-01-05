@@ -29,8 +29,12 @@ docsmodules = [
         "Tempo",
         "Ephemerides", 
         "CalcephEphemeris",
+        "IERSConventions",
         "FrameTransformations",
-    ]
+    ],
+    "Astro" => [
+        "AstroRepresentations"
+    ],
     "Developer Tools" => 
     [
         "JSMDInterfaces", 
