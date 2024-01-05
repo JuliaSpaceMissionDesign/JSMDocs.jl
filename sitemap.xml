@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://juliaspacemissiondesign.github.io/AstroRepresentations/stable/</loc></url>
+<url><loc>https://juliaspacemissiondesign.github.io/AstroRepresentations/stable/angles/</loc></url>
+<url><loc>https://juliaspacemissiondesign.github.io/AstroRepresentations/stable/states/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/CalcephEphemeris/stable/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/CalcephEphemeris/stable/api/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/CalcephEphemeris/stable/search/</loc></url>
@@ -13,6 +16,9 @@
 <url><loc>https://juliaspacemissiondesign.github.io/Ephemerides/stable/tutorials/load/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/Ephemerides/stable/tutorials/position/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/</loc></url>
+<url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Examples/gen/e01_cr3bp/</loc></url>
+<url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Examples/gen/e02_hifi/</loc></url>
+<url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Examples/gen/e03_customorb/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Modules/frames/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Modules/frames_api/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Modules/frames_lapi/</loc></url>
@@ -22,6 +28,12 @@
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Modules/utils/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Modules/utils_api/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Modules/utils_lapi/</loc></url>
+<url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Tutorials/gen/t00_frames/</loc></url>
+<url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Tutorials/gen/t01_axes/</loc></url>
+<url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Tutorials/gen/t02_points/</loc></url>
+<url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Tutorials/gen/t03_eop/</loc></url>
+<url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Tutorials/gen/t04_lighttime/</loc></url>
+<url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Tutorials/gen/t05_multithread/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Tutorials/t00_frames/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Tutorials/t01_axes/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Tutorials/t02_points/</loc></url>
