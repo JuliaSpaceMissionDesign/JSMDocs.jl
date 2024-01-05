@@ -29,7 +29,7 @@ docsmodules = [
         "Tempo",
         "Ephemerides", 
         "CalcephEphemeris",
-        "IERSConventions",
+        # "IERSConventions",
         "FrameTransformations",
     ],
     "Astro" => [
