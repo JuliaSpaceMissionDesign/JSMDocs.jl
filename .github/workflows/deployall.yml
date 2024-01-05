@@ -1,8 +1,12 @@
 name: Aggregate
+
 on:
   push:
-    branches:
-      - master
+    branches: [ master ] 
+  schedule:
+    # Run every Friday at noon UTC
+    - cron: '0 12 * * 5'
+
 jobs:
   aggregate:
     runs-on: ubuntu-latest
