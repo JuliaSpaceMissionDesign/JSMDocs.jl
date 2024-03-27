@@ -1,11 +1,17 @@
 using JSMDocs
 using Documenter
+using DocumenterCitations
+
+bib = CitationBibliography(
+    joinpath(@__DIR__, "src", "refs.bib");
+    style=:numeric
+)
 
 const CI = get(ENV, "CI", "false") == "true"
 
 makedocs(;
     authors="Andrea Pasquale <andrea.pasquale@polimi.it> and Michele Ceresoli <michele.ceresoli@polimi.it>",
-    sitename="JSMD Docs",
+    sitename="JSMD Documentation",
     modules=[JSMDocs],
     format=Documenter.HTML(; 
         prettyurls=CI, 
@@ -18,14 +24,15 @@ makedocs(;
         "Ecosystem" => [
             "Mission" => "ecosystem/mission.md"
         ],
-        # "Guidelines" => nothing,
-        # "Encyclopedia" => [
-        #     "Models" => [
-        #         "Time" => "encyclopedia/astro/time.md",
-        #         "Frames" => "encyclopedia/astro/frames/index.md",
-        #         "Gravity" => "encyclopedia/astro/gravity/index.md"
-        #     ]
-        # ]
+        "Encyclopedia" => [
+            "Models" => [
+                "Gravity" => [
+                    "Spherical Harmonics" =>"encyclopedia/astro/gravity/harmonics.md"
+                ]
+            ],
+            "References" => "references.md"
+        ]
     ],
     clean=true,
+    plugins=[bib, ]
 )
