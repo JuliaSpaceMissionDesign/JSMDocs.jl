@@ -27,7 +27,9 @@ makedocs(;
         "Encyclopedia" => [
             "Models" => [
                 "Gravity" => [
-                    "Spherical Harmonics" =>"encyclopedia/astro/gravity/harmonics.md"
+                    "encyclopedia/astro/gravity/intro.md",
+                    "Point Masses" => "encyclopedia/astro/gravity/point.md",
+                    "Spherical Harmonics" => "encyclopedia/astro/gravity/harmonics.md"
                 ]
             ],
             "References" => "references.md"

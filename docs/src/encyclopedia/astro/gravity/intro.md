@@ -1,4 +1,4 @@
-# Gravitational Models
+# Introduction
 
 Gravitational models play a crucial role in engineering applications related to space 
 missions, satellite operations, and celestial mechanics. These models provide a mathematical 
@@ -14,14 +14,14 @@ leveraged for preliminary orbit design.
 For more accurate calculations, more sophisticated models are required, such as the 
 **n-Body Problem**: it considers the gravitational interactions among multiple celestial 
 bodies, accounting for the gravitational influences of planets, moons, and other significant 
-objects within a celestial system. These models are essential for precise orbit determination, 
-long-term mission planning, and deep space missions where multiple gravitational forces come into play.
+objects within a celestial system.
+
+The gravity field of most of the bodies, however, is not usually well represented by one of 
+a spherically symmetric body, when in vicinity of the body. For this reason, more accurate gravitational 
+field representations are required, as the **Spherical Harmonics Expansion** or the 
+**Constant Density Polyhedron**. The former is a gravity field expansion using spherical harmonics 
+coefficients, the latter exploit a meshed representation of the body shape and compute
+the gravity field analytically, exploiting surface and line integrals.
+
 The aim of this part of the documentation is to provide a concise, clear and mathematically accurate 
-representation of the most used gravitational models.
-
-## Models
-
-```@contents
-Pages = ["ephem.md", "spharm.md", "poly.md"]
-Depth = 1
-```
+representation of gravitational models available within the JSMD ecosystem.

@@ -149,7 +149,7 @@ Note that this is directly the number of digits different from `Float128`, which
 
 ```@raw html
 <div align="center">
-    <img src="delta_Vnm_float128.png" alt="Image" />
+    <img src="assets/delta_Vnm_float128.png" alt="Image" />
 </div>
 ```
 
@@ -161,7 +161,7 @@ Equivalently, the same error analysis is performed for the normalization factors
 
 ```@raw html
 <div align="center">
-    <img src="delta_Nnm_float128.png" alt="Image" />
+    <img src="assets/delta_Nnm_float128.png" alt="Image" />
 </div>
 ```
 
