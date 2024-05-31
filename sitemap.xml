@@ -16,6 +16,10 @@
 <url><loc>https://juliaspacemissiondesign.github.io/Ephemerides/stable/tutorials/load/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/Ephemerides/stable/tutorials/position/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/</loc></url>
+<url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/API/axes_api/</loc></url>
+<url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/API/dir_api/</loc></url>
+<url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/API/frames_api/</loc></url>
+<url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/API/point_api/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Examples/gen/e01_cr3bp/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Examples/gen/e02_hifi/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Examples/gen/e03_customorb/</loc></url>
