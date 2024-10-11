@@ -34,11 +34,8 @@
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Modules/utils_lapi/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Tutorials/gen/t00_frames/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Tutorials/gen/t01_axes/</loc></url>
-<url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Tutorials/gen/t01_rotation/</loc></url>
-<url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Tutorials/gen/t02_axes/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Tutorials/gen/t02_points/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Tutorials/gen/t03_eop/</loc></url>
-<url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Tutorials/gen/t03_points/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Tutorials/gen/t04_lighttime/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Tutorials/gen/t05_multithread/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/Tutorials/t00_frames/</loc></url>
@@ -52,6 +49,8 @@
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/search/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/FrameTransformations/stable/todos/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/IERSConventions/stable/</loc></url>
+<url><loc>https://juliaspacemissiondesign.github.io/IERSConventions/stable/API/api/</loc></url>
+<url><loc>https://juliaspacemissiondesign.github.io/IERSConventions/stable/API/lapi/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/IERSConventions/stable/api/api/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/IERSConventions/stable/api/lapi/</loc></url>
 <url><loc>https://juliaspacemissiondesign.github.io/IERSConventions/stable/benchmarks/</loc></url>
